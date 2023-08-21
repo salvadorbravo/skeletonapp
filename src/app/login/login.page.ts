@@ -39,7 +39,7 @@ export class LoginPage implements OnInit {
       if (usuario.nombre == f.nombre && usuario.password == f.password) {
         console.log('Ingresado');
         localStorage.setItem('ingresado', 'true');
-        this.navCtrl.navigateRoot('inicio');
+        this.navCtrl.navigateRoot('menu/inicio');
       } else {
         const alert = await this.alertController.create({
           header: 'Datos incorrectos',

@@ -20,10 +20,11 @@ const routes: Routes = [
     canActivate: [NoIngresadoGuard]
   },
   {
-    path: 'inicio',
-    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule),
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule),
     canActivate: [IngresadoGuard]
   },
+  
 ];
 
 @NgModule({
